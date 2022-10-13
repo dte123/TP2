@@ -5,16 +5,15 @@
 
 \author{Yu Deng, 20151659\\Rosine Rolande Simo Tegninko, }
 
-\date{October 2022}
+\date{}
 
 \begin{document}
 
 \maketitle
 
-\section{GQM}\\
+\item \bullet {$Tache 1$}
 
-
-\item(Q1)
+\item$\textbf{(Q1)}$
 Pour le Q1, nous avons choisi deux métriques, NCH et Nombre de tests.
 
 1.	NCH fait référence au nombre de commits dans l'historique de la classe. Ensuite, nous pouvons juger s'il est adapté à sa complexité en regardant le nombre de commits. Voici pourquoi : s'il y a trop de commits, alors on sait aussi que la personne qui a écrit ce code le met constamment à jour afin de pouvoir l'adapter à la complexité.
@@ -22,10 +21,14 @@ Pour le Q1, nous avons choisi deux métriques, NCH et Nombre de tests.
 2.Plusieurs tests sont sûrs de trouver de nombreux problèmes. Et pour chaque test, nous devons "augmenter" la complexité de "l'entrée" pour détecter si le niveau de document de la classe est approprié à sa complexité.
 
 
-\item(Q2)
+\item $\textbf{(Q2)}$
+Pour le Q2, nous avons choisi deux métriques, NLF(Le nombre de lignes de code d’une fonction) et LCOM.
+
+1. De manière générale, une fonction ne doit pas dépasser 40 lignes de code. S'il y a trop de couches de fonctions, cela affectera notre jugement logique lors de la vérification du code.
+2. Plus le score LCOM est faible, meilleure est la cohésion de sa structure et meilleur est le degré de corrélation entre les parties du module.
 
 
-\item(Q3)
+\item$\textbf{(Q3)}$
 Pour Q3, nous avons sélectionné deux métriques, CBO et Temps total de l’exécution.
 
 
@@ -34,7 +37,7 @@ Pour Q3, nous avons sélectionné deux métriques, CBO et Temps total de l’ex�
 2. Pour Temps total de l’exécution, lorsque nous testons, le résultat est très lent. Tout le monde veut obtenir une réponse le plus rapidement possible, ensuite si le temps d'exécution est lent, le code est moins mature et moins adapté aux besoins des gens.
 
 
-\item(Q4)
+\item$\textbf{(Q4)}$
 Pour le Q4, nous avons choisi deux métriques, TPC et NEC.
 
 1. Pour TPC, nous testons en fonction de la classe, donc au lieu de tester directement l'intégralité du code, nous pouvons juger si chaque partie peut être exécutée correctement grâce à des tests automatiques. S'il y a un bogue dans l'un d'entre eux, alors lorsque le code global est automatiquement testé, certains bogues seront trouvés.
