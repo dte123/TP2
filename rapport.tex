@@ -1,4 +1,6 @@
 \documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.7}
 \usepackage[utf8]{inputenc}
 
 \title{Rapport TP2}
@@ -26,6 +28,7 @@ Pour le Q1, nous avons choisi deux métriques, NCH et Nombre de tests.
 Pour le Q2, nous avons choisi deux métriques, NLF(Le nombre de lignes de code d’une fonction) et LCOM.
 
 1. De manière générale, une fonction ne doit pas dépasser 40 lignes de code. S'il y a trop de couches de fonctions, cela affectera notre jugement logique lors de la vérification du code.
+
 2. Plus le score LCOM est faible, meilleure est la cohésion de sa structure et meilleur est le degré de corrélation entre les parties du module.
 
 
@@ -53,7 +56,29 @@ Par exemple, si la classe MethodVisitor a un CSEC=3, la sortie du lcsec doit avo
 
 \section*{Tâche 3}\\
 
+\item$\textbf{(Q4)}$
+Explication : Nous vérifions d'abord directement le nombre de soumissions et enregistrons les données détaillées. Plus tard, nous entrons quelques données, telles que la création de différents types d'histogrammes, et voyons les résultats finaux.
 
+Réponse : Oui. D'après les résultats obtenus, vous pouvez dire que le niveau de documentation des classes est-il approprié par rapport à leur complexité.
+
+\item$\textbf{(Q2)}$
+Explication : Nous pouvons choisir n'importe quelle fonction et vérifier son nombre de lignes, ce qui peut être facilement jugé. En observant le nombre de lignes de fonction, nous pouvons également sélectionner une partie du code pour calculer LCOM.
+
+Réponse : Oui. La plupart des fonctions ne sont pas très compliquées et peuvent être présentées clairement. Et le LCOM est également faible, donc la cohésion est bonne.
+
+\item$\textbf{(Q3)}$
+Explication : CSEC peut être mesuré par le code dans TP1. Pour le temps d'exécution total, faites un histogramme en Q1, puis je peux également obtenir le temps d'exécution final.
+
+Réponse : Oui. La plupart des classes ont un faible couplage, le temps d'exécution n'est pas lent et les résultats souhaités peuvent être obtenus rapidement.
+
+\item$\textbf{(Q4)}$
+Explication : Nous sélectionnons d'abord quelques classes, les testons individuellement et voyons les résultats. Nous sélectionnons directement la fonction de test à tester et voyons le nombre final d'erreurs.
+
+Réponse : Nous pouvons voir qu'il existe des fonctions de test dans jfreechart, nous pouvons donc les tester séparément. Si le nombre d'erreurs est faible, le code peut-il être testé bien automatiquement.\\
+
+\item$\textbf{Une évaluation du niveau de maintenabilité du JFreeChart:}$\\
+Sur la base des réponses aux quatre questions ci-dessus sur le code JFreeChart, il est clair que le code est modérément maintenable. Le résultat final souhaité est presque toujours satisfait après la mesure à l'aide des métriques.\\
+Cependant, peut-être que d'autres améliorations peuvent être apportées dans le couplage des classes. Un système à faible couplage a une meilleure réutilisabilité, maintenabilité et évolutivité, et peut compléter la maintenance et le développement du système plus efficacement, et soutenir en permanence le développement du système sans devenir un obstacle au développement du système.
 
 
 \end{document}
