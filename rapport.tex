@@ -12,7 +12,7 @@ Yu Deng, 20151659}
 
 \maketitle
 
-\item \bullet {$Tache 1$}
+\section*{Tâche 1}
 
 \item$\textbf{(Q1)}$
 Pour le Q1, nous avons choisi deux métriques, NCH et Nombre de tests.
@@ -30,7 +30,7 @@ Pour le Q2, nous avons choisi deux métriques, NLF(Le nombre de lignes de code d
 
 
 \item$\textbf{(Q3)}$
-Pour Q3, nous avons sélectionné deux métriques, CBO et Temps total de l’exécution.
+Pour Q3, nous avons sélectionné deux métriques, CSEC et Temps total de l’exécution.
 
 
 1. CSEC fait référence à "couplage simple entre classes", nous savons que plus une classe est couplée à d'autres classes, plus une modification de cette classe peut influencer de classes. Ensuite, CSEC a joué un grand rôle en testant si le code est mature, If ce code peut avoir un CSEC inférieur, la charge de travail des tests sera également réduite.
@@ -43,7 +43,16 @@ Pour le Q4, nous avons choisi deux métriques, TPC et NEC.
 
 1. Pour TPC, nous testons en fonction de la classe, donc au lieu de tester directement l'intégralité du code, nous pouvons juger si chaque partie peut être exécutée correctement grâce à des tests automatiques. S'il y a un bogue dans l'un d'entre eux, alors lorsque le code global est automatiquement testé, certains bogues seront trouvés.
 
-2. Pour NEC, il est évident que si un code a beaucoup d'erreurs après son exécution, alors le code doit avoir une erreur dans un certain lien. Lors du test automatique, il a dû rencontrer des problèmes, ensuite, ce code ne fonctionne pas bien dans les tests automatiques.
+2. Pour NEC, il est évident que si un code a beaucoup d'erreurs après son exécution, alors le code doit avoir une erreur dans un certain lien. Lors du test automatique, il a dû rencontrer des problèmes, ensuite, ce code ne fonctionne pas bien dans les tests automatiques.\\
+
+\section*{Tâche 2}\\
+On peut répondre à la question 2 en mesurant le CSEC, ce qui est aussi plus facile à faire car on a déjà complété ce code (lcsec.py) dans le premier devoir.\\
+Par exemple, si la classe MethodVisitor a un CSEC=3, la sortie du lcsec doit avoir, parmi autres, la ligne :
+
+./gr/spinellis/ckjm/MethodVisitor.java, gr.spinellis.ckjm, MethodVisitor, 3\\
+
+\section*{Tâche 3}\\
+
 
 
 
