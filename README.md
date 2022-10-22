@@ -13,3 +13,6 @@ java -jar jfreechart-demo-1.5.2-jar-with-dependencies.jar
 
 ## lcsec
 - Vous pouvez utiliser ce fichier pour obtenir le CSEC
+
+## Notre propre implémentation
+- Utiliser un fichier code_line.py pour tester le nombre de lignes de code
