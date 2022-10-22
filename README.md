@@ -4,3 +4,17 @@
 - Rosine Rolande Simo Tegninko 20183729
 - Yu Deng 20151659
 
+## JFreeChart example
+- Téléchargez et exécutez l'application de démonstration JFreeChart
+- Cliquez sur ce file pour télécharger un fichier jar exécutable qui illustre certaines des fonctionnalités de JFreeChart  file:
+`jfreechart-demo-1.5.2-jar-with-dependencies.jar`
+- Vous pouvez ensuite l'exécuter sur la ligne de commande en tapant :
+`java -jar jfreechart-demo-1.5.2-jar-with-dependencies.jar`
+
+## lcsec
+- Vous pouvez utiliser ce fichier pour obtenir le CSEC
+>`lcsec/main.py` -  Lorsqu'elle est appelée, la fonction attend le chemin du dossier comme argument d'entrée et renvoie `list` de `dict`s qui contient le `file_path`, `filename`, `class name` et la valeur correspondante `csec`
+>
+## Notre propre implémentation
+- Utiliser un fichier `code_line.py` pour tester le nombre de lignes de code
+- Il suffit de mettre le dossier `jfreechart-master` et le `code_line.py` dans le même répertoire pour tester
