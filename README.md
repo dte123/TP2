@@ -16,3 +16,4 @@ java -jar jfreechart-demo-1.5.2-jar-with-dependencies.jar
 
 ## Notre propre implémentation
 - Utiliser un fichier code_line.py pour tester le nombre de lignes de code
+- Il suffit de mettre le dossier "jfreechart-master" et le code_line.py dans le même répertoire pour tester
