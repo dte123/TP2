@@ -13,6 +13,7 @@ java -jar jfreechart-demo-1.5.2-jar-with-dependencies.jar
 
 ## lcsec
 - Vous pouvez utiliser ce fichier pour obtenir le CSEC
+>`lcsec/main.py` -  This contains the functionality of Part 2 of the assignment. When called the function expects folder path as input argument and returns `list` of `dict`s which contains the required `file_path`, `filename`, `class name` and corresponsing `csec` value
 
 ## Notre propre implémentation
 - Utiliser un fichier code_line.py pour tester le nombre de lignes de code
