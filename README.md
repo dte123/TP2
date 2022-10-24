@@ -27,3 +27,4 @@ The snapshot of the output below proves it produced an accurate output
 ## Tests supplémentaires
 - On peut se référer aux deux images `Capture1.JPG` et `Capture2.JPG`, qui testent le code global à l'aide de l'outil sonarQube.
 <img src="Capture1.JPG" width="200%">
+<img src="Capture2.JPG" width="200%">
