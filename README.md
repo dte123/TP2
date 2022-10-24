@@ -7,6 +7,7 @@
 ## Requirements
 - This project requires Python 3.10 installed on your system
 - Pour de Rapport spécifique sur les exigences du TP, veuillez cliquer sur Fichier `Rapport_TP2.pdf`.
+- Installez et téléchargez `sonarQube`.
 
 ## Git Repo
 https://github.com/dte123/TP2.git
