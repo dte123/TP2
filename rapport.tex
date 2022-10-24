@@ -33,12 +33,12 @@ Pour le Q2, nous avons choisi deux métriques, NLF(Le nombre de lignes de code d
 
 
 \item$\textbf{(Q3)}$
-Pour Q3, nous avons sélectionné deux métriques, CSEC et Temps total de l’exécution.
+Pour Q3, nous avons sélectionné deux métriques, CSEC et LOC.
 
 
 1. CSEC fait référence à "couplage simple entre classes", nous savons que plus une classe est couplée à d'autres classes, plus une modification de cette classe peut influencer de classes. Ensuite, CSEC a joué un grand rôle en testant si le code est mature, If ce code peut avoir un CSEC inférieur, la charge de travail des tests sera également réduite.
 
-2. Pour Temps total de l’exécution, lorsque nous testons, le résultat est très lent. Tout le monde veut obtenir une réponse le plus rapidement possible, ensuite si le temps d'exécution est lent, le code est moins mature et moins adapté aux besoins des gens.
+2. Nous pouvons tester le nombre de lignes de code suffixées par .java et .html dans le document, un code mature avec d'excellentes performances doit avoir plus de lignes de code. Parce qu'il doit implémenter un programme très volumineux, il a besoin de beaucoup de code pour prendre en charge l'opération.
 
 
 \item$\textbf{(Q4)}$
@@ -49,10 +49,8 @@ Pour le Q4, nous avons choisi deux métriques, TPC et NEC.
 2. Pour NEC, il est évident que si un code a beaucoup d'erreurs après son exécution, alors le code doit avoir une erreur dans un certain lien. Lors du test automatique, il a dû rencontrer des problèmes, ensuite, ce code ne fonctionne pas bien dans les tests automatiques.\\
 
 \section*{Tâche 2}\\
-On peut répondre à la question 2 en mesurant le CSEC, ce qui est aussi plus facile à faire car on a déjà complété ce code (lcsec.py) dans le premier devoir.\\
-Par exemple, si la classe MethodVisitor a un CSEC=3, la sortie du lcsec doit avoir, parmi autres, la ligne :
-
-./gr/spinellis/ckjm/MethodVisitor.java, gr.spinellis.ckjm, MethodVisitor, 3\\
+Propre implémentation:Nous avons écrit un programme simple (code line.py) qui peut être utilisé directement pour tester le nombre de lignes de code.\\
+Les résultats des tests pertinents d'autres métriques peuvent être consultés sur github
 
 \section*{Tâche 3}\\
 
@@ -67,14 +65,14 @@ Explication : Nous pouvons choisir n'importe quelle fonction et vérifier son n
 Réponse : Oui. La plupart des fonctions ne sont pas très compliquées et peuvent être présentées clairement. Et le LCOM est également faible, donc la cohésion est bonne.
 
 \item$\textbf{(Q3)}$
-Explication : CSEC peut être mesuré par le code dans TP1. Pour le temps d'exécution total, faites un histogramme en Q1, puis je peux également obtenir le temps d'exécution final.
+Explication : CSEC peut être mesuré par le code dans TP1. Pour le nombre de lignes de code, on peut le tester selon le programme de la tâche 2. On peut savoir que ce fichier contient une grande quantité de code et possède déjà un prototype de code mature.
 
-Réponse : Oui. La plupart des classes ont un faible couplage, le temps d'exécution n'est pas lent et les résultats souhaités peuvent être obtenus rapidement.
+Réponse : Oui. La plupart des classes ont un faible couplage. Et en mesurant le nombre de lignes de code, nous pouvons obtenir des nombres spécifiques, ce qui signifie que c'est un code mature.
 
 \item$\textbf{(Q4)}$
 Explication : Nous sélectionnons d'abord quelques classes, les testons individuellement et voyons les résultats. Nous sélectionnons directement la fonction de test à tester et voyons le nombre final d'erreurs.
 
-Réponse : Nous pouvons voir qu'il existe des fonctions de test dans jfreechart, nous pouvons donc les tester séparément. Si le nombre d'erreurs est faible, le code peut-il être testé bien automatiquement.\\
+Réponse : Nous pouvons voir qu'il existe des fonctions de test dans jfreechart, nous pouvons donc les tester séparément. Le nombre d'erreurs est faible, le code peut être testé bien automatiquement.\\
 
 \item$\textbf{Une évaluation du niveau de maintenabilité du JFreeChart:}$\\
 Sur la base des réponses aux quatre questions ci-dessus sur le code JFreeChart, il est clair que le code est modérément maintenable. Le résultat final souhaité est presque toujours satisfait après la mesure à l'aide des métriques.\\
