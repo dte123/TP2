@@ -5,7 +5,8 @@
 - Yu Deng 20151659
 
 ## Requirements
-This project requires Python 3.10 installed on your system
+- This project requires Python 3.10 installed on your system
+- Pour de Rapport spécifique sur les exigences du TP, veuillez cliquer sur Fichier `Rapport_TP2.pdf`.
 
 ## Git Repo
 https://github.com/dte123/TP2.git
