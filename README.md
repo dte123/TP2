@@ -30,3 +30,6 @@ The snapshot of the output below proves it produced an accurate output
 - On peut se référer aux deux images `Capture1.JPG` et `Capture2.JPG`, qui testent le code global à l'aide de l'outil sonarQube.
 <img src="Capture1.JPG" width="200%">
 <img src="Capture2.JPG" width="200%">
+
+## LCOM
+- Commencez par le fichier `LCOM.java` (situé dans le dossier `lcom`). Vous pouvez exécuter le programme en exécutant le fichier `LCOM.java` avec deux paramètres -i et -o pour le chemin du dossier du code source d'entrée et le chemin du dossier de sortie respectivement.
