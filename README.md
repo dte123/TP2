@@ -20,3 +20,4 @@
 - Il suffit de mettre le dossier `jfreechart-master` et le `code_line.py` dans le même répertoire pour tester
 
 ## Tests supplémentaires
+- On peut se référer aux deux images `Capture1.JPG` et `Capture2.JPG`, qui testent le code global à l'aide de l'outil sonarQube.
