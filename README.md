@@ -33,3 +33,4 @@ The snapshot of the output below proves it produced an accurate output
 
 ## LCOM
 - Commencez par le fichier `LCOM.java` (situé dans le dossier `lcom`). Vous pouvez exécuter le programme en exécutant le fichier `LCOM.java` avec deux paramètres -i et -o pour le chemin du dossier du code source d'entrée et le chemin du dossier de sortie respectivement.
+- Cet outil de mesure vient de https://github.com/tushartushar/LCOM.git
