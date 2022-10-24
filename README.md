@@ -14,7 +14,12 @@
 ## lcsec
 - Vous pouvez utiliser ce fichier pour obtenir le CSEC
 >`lcsec/main.py` -  Lorsqu'elle est appelée, la fonction attend le chemin du dossier comme argument d'entrée et renvoie `list` de `dict`s qui contient le `file_path`, `filename`, `class name` et la valeur correspondante `csec`
+- Function to test the running of the Program
+<img src="./screenshots/lcsec_test.png" width="200%">
+The snapshot of the output below proves it produced an accurate output
+<img src="./screenshots/lcsec_output.png" width="200%">
 >
+
 ## Notre propre implémentation
 - Utiliser un fichier `code_line.py` pour tester le nombre de lignes de code
 - Il suffit de mettre le dossier `jfreechart-master` et le `code_line.py` dans le même répertoire pour tester
