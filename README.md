@@ -18,7 +18,7 @@
 <img src="./screenshots/lcsec_test.png" width="200%">
 The snapshot of the output below proves it produced an accurate output
 <img src="./screenshots/lcsec_output.png" width="200%">
->
+
 
 ## Notre propre implémentation
 - Utiliser un fichier `code_line.py` pour tester le nombre de lignes de code
