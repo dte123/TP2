@@ -5,7 +5,7 @@
 - Yu Deng 20151659
 
 ## Requirements
-- This project requires Python 3.10 installed on your system
+- Ce projet nécessite Python 3.10 installé sur votre système.
 - Pour de Rapport spécifique sur les exigences du TP, veuillez cliquer sur Fichier `Rapport_TP2.pdf`.
 - Installez et téléchargez `sonarQube`.
 
