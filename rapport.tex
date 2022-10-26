@@ -1,6 +1,5 @@
 \documentclass{article}
 \usepackage{geometry}
-\usepackage{url}
 \geometry{a4paper,scale=0.7}
 \usepackage[utf8]{inputenc}
 
@@ -18,15 +17,11 @@ Yu Deng, 20151659}
 \section*{Tâche 1}
 
 \item$\textbf{(Q1)}$
-Pour le Q1, nous avons choisi deux métriques, WMC et DC.
+Pour le Q1, nous avons choisi deux métriques, NCH et Nombre de tests.
 
-1.	WMC (Weighted Methods per Class) : Méthodes pondérées par classe, se réfère à
-la somme des complexités (cyclomatique) des méthodes d'une classe donnée. Plus la
-valeur est élevée, plus la classe est complexe
+1.	NCH fait référence au nombre de commits dans l'historique de la classe. Ensuite, nous pouvons juger s'il est adapté à sa complexité en regardant le nombre de commits. Voici pourquoi : s'il y a trop de commits, alors on sait aussi que la personne qui a écrit ce code le met constamment à jour afin de pouvoir l'adapter à la complexité.
 
-2. La densité des commentaires d'une classe permet de voir le niveau de documentation de la classe. Plus la densité est élévée, plus le niveau de documentation est élévé.
-Nous devons mesurer cette densité et voir s'il est approprié à sa complexité en la comparant au WMC.
-
+2.Plusieurs tests sont sûrs de trouver de nombreux problèmes. Et pour chaque test, nous devons "augmenter" la complexité de "l'entrée" pour détecter si le niveau de document de la classe est approprié à sa complexité.
 
 
 \item $\textbf{(Q2)}$
@@ -41,7 +36,7 @@ Pour le Q2, nous avons choisi deux métriques, NLF(Le nombre de lignes de code d
 Pour Q3, nous avons sélectionné deux métriques, CSEC et LOC.
 
 
-1. CSEC fait référence à "couplage simple entre classes", nous savons que plus une classe est couplée à d'autres classes, plus une modification de cette classe peut influencer des classes. Ensuite, CSEC a joué un grand rôle en testant si le code est mature, SI ce code a un CSEC inférieur, la charge de travail des tests sera également réduite.
+1. CSEC fait référence à "couplage simple entre classes", nous savons que plus une classe est couplée à d'autres classes, plus une modification de cette classe peut influencer de classes. Ensuite, CSEC a joué un grand rôle en testant si le code est mature, If ce code peut avoir un CSEC inférieur, la charge de travail des tests sera également réduite.
 
 2. Nous pouvons tester le nombre de lignes de code suffixées par .java et .html dans le document, un code mature avec d'excellentes performances doit avoir plus de lignes de code. Parce qu'il doit implémenter un programme très volumineux, il a besoin de beaucoup de code pour prendre en charge l'opération.
 
@@ -49,24 +44,23 @@ Pour Q3, nous avons sélectionné deux métriques, CSEC et LOC.
 \item$\textbf{(Q4)}$
 Pour le Q4, nous avons choisi deux métriques, TPC et NEC.
 
-1. Pour TPC, nous testons en fonction de la classe, donc au lieu de tester directement l'intégralité du code, nous pouvons juger si chaque partie peut être exécutée correctement grâce à des tests automatiques. S'il y a un bug dans l'un d'entre eux, alors lorsque le code global est automatiquement testé, certains bug seront trouvés.
+1. Pour TPC, nous testons en fonction de la classe, donc au lieu de tester directement l'intégralité du code, nous pouvons juger si chaque partie peut être exécutée correctement grâce à des tests automatiques. S'il y a un bogue dans l'un d'entre eux, alors lorsque le code global est automatiquement testé, certains bogues seront trouvés.
 
 2. Pour NEC, il est évident que si un code a beaucoup d'erreurs après son exécution, alors le code doit avoir une erreur dans un certain lien. Lors du test automatique, il a dû rencontrer des problèmes, ensuite, ce code ne fonctionne pas bien dans les tests automatiques.\\
 
 \section*{Tâche 2}\\
 Propre implémentation:Nous avons écrit un programme simple (code line.py) qui peut être utilisé directement pour tester le nombre de lignes de code.\\
-Les résultats des tests pertinents d'autres métriques peuvent être consultés sur github\\
-\url{https://github.com/dte123/TP2.git}
+Les résultats des tests pertinents d'autres métriques peuvent être consultés sur github
 
 \section*{Tâche 3}\\
 
-\item$\textbf{(Q1)}$
-Explication :Observons la complexité cyclomatique qui est de 1 et  comparons là à la densité des commentaires qui est de 0.6  . 
+\item$\textbf{(Q4)}$
+Explication : Nous vérifions d'abord directement le nombre de soumissions et enregistrons les données détaillées. Plus tard, nous entrons quelques données, telles que la création de différents types d'histogrammes, et voyons les résultats finaux.
 
-Réponse : Oui. D'après les résultats obtenus, nous pouvons dire que le niveau de documentation des classes est approprié par rapport à leur complexité.
+Réponse : Oui. D'après les résultats obtenus, vous pouvez dire que le niveau de documentation des classes est-il approprié par rapport à leur complexité.
 
 \item$\textbf{(Q2)}$
-Explication : Nous pouvons choisir n'importe quelle fonction et vérifier son nombre de lignes, ce qui peut être facilement jugé. En observant le nombre de lignes de fonction, nous pouvons également sélectionner une partie du code pour calculer LCOM.
+Explication : Nous pouvons choisir n'importe quelle fonction et vérifier son nombre de lignes, ce qui peut être facilement jugé. En observant le nombre de lignes de fonction, nous pouvons également sélectionner une partie du code pour calculer LCOM.
 
 Réponse : Oui. La plupart des fonctions ne sont pas très compliquées et peuvent être présentées clairement. Et le LCOM est également faible, donc la cohésion est bonne.
 
@@ -76,15 +70,15 @@ Explication : CSEC peut être mesuré par le code dans TP1. Pour le nombre de li
 Réponse : Oui. La plupart des classes ont un faible couplage. Et en mesurant le nombre de lignes de code, nous pouvons obtenir des nombres spécifiques, ce qui signifie que c'est un code mature.
 
 \item$\textbf{(Q4)}$
-Explication : Nous sélectionnons d'abord quelques classes, les testons individuellement et voyons les résultats. Nous sélectionnons directement la fonction de test à tester et voyons le nombre final d'erreurs.
+Explication : Nous sélectionnons d'abord quelques classes, les testons individuellement et voyons les résultats. Nous sélectionnons directement la fonction de test à tester et voyons le nombre final d'erreurs.
 
-Réponse : Oui. Nous pouvons voir qu'il existe des fonctions de test dans jfreechart, nous pouvons donc les tester séparément. Le nombre d'erreurs est faible, le code peut être testé bien automatiquement.\\
-
+Réponse : Oui. Nous pouvons voir qu'il existe des fonctions de test dans jfreechart, nous pouvons donc les tester séparément. Le nombre d'erreurs est faible, le code peut être testé bien automatiquement.\\
 
 \item$\textbf{Une évaluation du niveau de maintenabilité du JFreeChart:}$\\
-Sur la base des réponses aux quatre questions ci-dessus sur le code JFreeChart, il est clair que le code est  maintenable. Le résultat final souhaité est presque toujours satisfait après la mesure à l'aide des métriques.\\
-Cependant, peut-être que d'autres améliorations peuvent être apportées dans le couplage des classes.\\
-On peut tester que le couplage des classes est très faible, mais toutes les classes ne remplissent pas cette condition. Ce que nous voulons faire, c'est réduire au maximum le couplage entre les classes, il y a donc encore place à l'amélioration de ce code. Un système à faible couplage a une meilleure réutilisabilité, maintenabilité et évolutivité, et peut compléter la maintenance et le développement du système plus efficacement, et soutenir en permanence le développement du système sans devenir un obstacle au développement du système.
+
+Sur la base des réponses aux quatre questions ci-dessus sur le code JFreeChart, de toute évidence, la maintenabilité du code est relativement élevée. C'est déjà un code mature, et il peut essentiellement répondre à une série de points tels que la compatibilité, la convivialité, la fiabilité et la sécurité. Cela montre également que le lien logique entre les codes est également très profond. Le résultat final souhaité est presque toujours satisfait après la mesure à l'aide des métriques.\\
+
+Si nous voulons modifier davantage ce code, peut-être que d'autres améliorations peuvent être apportées dans le couplage des classes. Un système à faible couplage a une meilleure réutilisabilité, maintenabilité et évolutivité, et peut compléter la maintenance et le développement du système plus efficacement, et soutenir en permanence le développement du système sans devenir un obstacle au développement du système.
 
 
 \end{document}
